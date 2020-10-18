@@ -1,5 +1,10 @@
 The frontend of a React app that allows users to register accounts and sign-in to input a photo's online image URL to detect faces. The app also records how many times the user has submitted to detect. The backend server is implemented with PostgreSQL.
 
+Installed packages:
+- tachyons: styling elements (https://www.npmjs.com/package/tachyons)
+- react-tilt: logo animation (https://www.npmjs.com/package/react-tilt)
+- react-particles-js: background animation (https://www.npmjs.com/package/react-particles-js)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
