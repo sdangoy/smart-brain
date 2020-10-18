@@ -4,6 +4,7 @@ Installed packages:
 - tachyons: styling elements (https://www.npmjs.com/package/tachyons)
 - react-tilt: logo animation (https://www.npmjs.com/package/react-tilt)
 - react-particles-js: background animation (https://www.npmjs.com/package/react-particles-js)
+- clarifai: facial detection API (https://www.clarifai.com/models/face-detection, https://www.npmjs.com/package/clarifai)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
