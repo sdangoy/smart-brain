@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'tachyons';
-import Clarifai from 'clarifai';
 import Particles from 'react-particles-js';
 import Navigation from './components/Navigation/Navigation.js';
 import Logo from './components/Logo/Logo.js';
@@ -41,7 +40,8 @@ const initialState = {
 class App extends Component {
   constructor() {
     super();
-    this.state = initialState; 
+    this.state = initialState;
+    this.wrapper = React.createRef();
   }
 
   loadUser = (data) => {
@@ -121,6 +121,7 @@ class App extends Component {
   render() {
     const { isSignedIn, imageUrl, box, route } = this.state;
     return (
+    <div ref={this.wrapper}>
       <div className='App'>
         <Particles 
           params={particlesOptions}
@@ -145,6 +146,7 @@ class App extends Component {
           ) 
         }        
       </div>
+    </div>
     );
   }
 }
