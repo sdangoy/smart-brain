@@ -79,7 +79,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});  
-    fetch('http://localhost:3001/imageurl', {
+    fetch('https://quiet-bastion-28973.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -89,7 +89,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => { 
       if (response) {
-        fetch('http://localhost:3001/image', {
+        fetch('https://quiet-bastion-28973.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -131,7 +131,7 @@ class App extends Component {
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
         { route === 'home' 
           ? <div> 
-              <Logo />\
+              <Logo />
               <Rank name={this.state.user.name} entries={this.state.user.entries} />
               <ImageLinkForm 
                 onInputChange={this.onInputChange} 
